@@ -1,0 +1,175 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.about {
+  display: inline-block;
+  width: 200px;
+  margin: 0 40px 0 0;
+}
+
+.content {
+  
+  display: inline-block;
+  vertical-align: top;
+}
+
+.navigation {
+  width: 100%;
+  border: 1px solid #dedede;
+  border-radius: 8px;
+  box-shadow: 0px 1px 0px 0px rgba(222,222,222,1);
+  padding: 25px;
+  text-align: center;
+}
+
+.navigation__link {
+  margin: 0 30px 0 0;
+}
+
+.navigation__link:last-child {
+  margin: 0;
+}
+
+.navigation__link._personal {
+  color: #8b00a4;
+}
+
+.navigation__link._section1 {
+  color: #14731b;
+}
+
+.navigation__link._section2 {
+  color: #41bcf8;
+}
+
+.navigation__link._section3 {
+  color: #ee6e00;
+}
+
+.navigation__link._section4 {
+  color: #333333;
+}
+
+.navigation__link._section5 {
+  color: #db3c00;
+}
+
+.progress-indicators {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  font-size: 0;
+}
+
+.progress-indicators__item {
+  display: inline-block;
+  min-width: 90px;
+  box-shadow: inset 0px 2px 5px 0px rgba(153,153,153,1);
+  text-align: center;
+  color: #fff;
+  font-style: italic;
+  font-size: 14px;
+  margin: 0 2px 0 0;
+}
+
+.info-form__heading {
+  display: inline-block;
+  margin: 0 30px 0 0;
+}
+
+.progress-indicators__item:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.progress-indicators__item:last-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.progress-indicators__item._done {
+  background: #3bad19;
+}
+
+.progress-indicators__item._active {
+  background: #9fd206;
+}
+
+.progress-indicators__item._inactive {
+  background: #f6f6f6;
+  color: #7b7b7b;
+}
+
+.info-form__section {
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.info-form__section:after {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid black;
+  vertical-align: middle;
+  width: 100%;
+  margin-right: -100%;
+}
+
+.change-name {
+  list-style: none;
+}
+
+.change-name__item {
+  display: inline-block;
+  padding: 4px 8px 4px 8px;
+  border-radius: 8px;
+}
+
+.change-name__checkbox {
+  display: none;
+}
+
+.change-name__label {
+  border-bottom: 1px dashed #000;
+  cursor: pointer;
+}
+
+.change-name__item._active {
+  background: #9fd206;
+}
+
+.change-name__item._active .change-name__label {
+  border: 0;
+}
+
+.change-gender {
+  list-style: none;
+}
+
+.change-gender__item {
+  display: inline-block;
+  padding: 4px 8px 4px 8px;
+  border-radius: 8px;
+}
+
+.change-gender__checkbox {
+  display: none;
+}
+
+.change-gender__label {
+  border-bottom: 1px dashed #000;
+  cursor: pointer;
+}
+
+.change-gender__item._active {
+  background: #9fd206;
+}
+
+.change-gender__item._active .change-gender__label {
+  border: 0;
+}

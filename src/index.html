@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="styles/default.css" rel="stylesheet">
+		<title>Index Page</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="about">
+				<p class="about__company">
+					*TutuRu - крупнейший сервис
+					поиска, бронирования и покупки авиабилетов и ж/д билетов.
+				</p>
+
+				<p class="about__goal">
+					Наша цель проста - делать наших
+					клиентов счастливыми, а их
+					путешествия незабываемыми.
+					Любое путешествие начинается с поиска билетов и
+					бронирования гостиниц.
+					А мы делаем это качественно,
+					обеспечивая самую лучшую
+					поддержку благодаря
+					собственному контакт-центру.
+				</p>
+			</div>
+
+			<div class="content">
+				<nav class="navigation">
+					<a class="navigation__link _personal" href="#">
+						Личный кабинет
+					</a>
+					<a class="navigation__link _section1" href="#">
+						Раздел 1
+					</a>
+					<a class="navigation__link _section2" href="#">
+						Раздел 2
+					</a>
+					<a class="navigation__link _section3" href="#">
+						Раздел 3
+					</a>
+					<a class="navigation__link _section4" href="#">
+						Раздел 4
+					</a>
+					<a class="navigation__link _section5" href="#">
+						Раздел 5
+					</a>
+				</nav>
+
+				<div class="info-form">
+					<h1 class="info-form__heading">
+						Заполните форму
+					</h1>
+
+					<ul class="progress-indicators">
+						<li class="progress-indicators__item _done">
+							1
+						</li>
+
+						<li class="progress-indicators__item _done">
+							2
+						</li>
+
+						<li class="progress-indicators__item _active">
+							3
+						</li>
+
+						<li class="progress-indicators__item _inactive">
+							4
+						</li>
+
+						<li class="progress-indicators__item _inactive">
+							5
+						</li>
+					</ul>
+					<h1 class="info-form__section">
+						Общая информация
+					</h1>
+				</div>
+
+				<form class="user-form">
+					<div class="user-form__block1">
+						<label class="user-form__label" for="user-surname">Фамилия</label>
+						<input class="user-form__input" type="text" id="user-surname" />
+
+						<label class="user-form__label" for="user-name">Имя</label>
+						<input class="user-form__input" type="text" id="user-name" />
+
+						<label class="user-form__label" for="user-otchestvo">Отчество</label>
+						<input class="user-form__input" type="text" id="user-otchestvo" />
+					</div>
+					<div class="user-form__block2">
+						<label>Меняли фамилию?</label>
+						<ul class="change-name">
+							<li class="change-name__item">
+								<input type="checkbox" class="change-name__checkbox" id="checkbox2" checked="checked" />
+								<label for="checkbox2" class="change-name__label">Да</label>
+							</li>
+							<li class="change-name__item _active">
+								<input type="checkbox" class="change-name__checkbox" id="checkbox1" checked="checked" />
+								<label for="checkbox1" class="change-name__label">Нет</label>
+							</li>
+						</ul>
+						<label>Пол</label>
+						<ul class="change-gender">
+							<li class="change-gender__item _active">
+								<input type="checkbox" class="change-gender__checkbox" id="checkbox3" checked="checked" />
+								<label for="checkbox3" class="change-gender__label">Муж</label>
+							</li>
+							<li class="change-gender__item">
+								<input type="checkbox" class="change-gender__checkbox" id="checkbox4" checked="checked" />
+								<label for="checkbox4" class="change-gender__label">Жен</label>
+							</li>
+						</ul>
+						<label>Семейное положение</label>
+						<select>
+							<option>Женат/Замужем</option>
+						</select>
+						<label>Гражданство</label>
+						<select>
+							<option>Российская федерация</option>
+						</select>
+						<label>Дата рождения</label>
+						<select>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>
+							<option>11</option>
+							<option>12</option>
+							<option>13</option>
+							<option>14</option>
+							<option>15</option>
+							<option>16</option>
+							<option>17</option>
+							<option>18</option>
+							<option>19</option>
+							<option>20</option>
+							<option>21</option>
+							<option>22</option>
+							<option>23</option>
+							<option>24</option>
+							<option>25</option>
+							<option>26</option>
+							<option>27</option>
+							<option>28</option>
+							<option>29</option>
+							<option>30</option>
+							<option>31</option>
+						</select>
+						<select>
+							<option>Январь</option>
+							<option>Февраль</option>
+							<option>Март</option>
+							<option>4</option>
+							<option>Апрель</option>
+							<option>Май</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>
+							<option>11</option>
+							<option>12</option>
+						</select>
+						<select>
+							<option>Российская федерация</option>
+						</select>
+					</div>
+
+					<div class="user-form__block3">
+
+					</div>
+				</form>
+			</div>
+		</div>
+		<script>
+			var checkboxes = document.querySelectorAll(".change-name__checkbox");
+
+			for (var checkbox of checkboxes) {
+            	checkbox.addEventListener("click", test);
+        	};
+
+        	var 
+		</script>
+	</body>
+</html>
