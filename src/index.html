@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="styles/default.css" rel="stylesheet">
+		<title>Components Page</title>
+	</head>
+	<body>
+		<div class="components">
+			<div class="rating-section">
+				<h3 class="name__section">Рейтинг: </h3>
+				<div class="star-rating">
+		    		<input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+		    		<label class="star-rating__ico _active" for="star-rating-1" title="1 out of 5 stars"></label>
+			        <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+			        <label class="star-rating__ico _active" for="star-rating-2" title="2 out of 5 stars"></label>
+			        <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+			        <label class="star-rating__ico" for="star-rating-3" title="3 out of 5 stars"></label>
+			        <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+			        <label class="star-rating__ico" for="star-rating-4" title="4 out of 5 stars"></label>
+			        <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+			        <label class="star-rating__ico" for="star-rating-5" title="5 out of 5 stars"></label>
+				</div>
+			</div>
+
+			<div class="progress-section">
+				<h3 class="name__section">Прогресс-бар: </h3>
+				<progress class="progress" value="20" max="100"></progress>
+			</div>
+
+			<div class="buttons-section">
+				<h3 class="name__section">Кнопки: </h3>
+				<input class="btn _small" type="button" value="Кнопка">
+				<a class="btn _normal" href="#">Кнопка</a>
+				<div class="btn _big">Кнопка</div>
+			</div>
+		</div>
+	</body>
+</html>
