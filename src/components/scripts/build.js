@@ -26,4 +26,24 @@ var starsModule = (function() {
 	};
 })();
 
-stars && starsModule.init();
+var progressModule = (function() {
+	var _init = function() {
+		_initProgress();
+	};
+
+	var _initProgress = function() {
+		var element = document.querySelector(".progress");
+		var progressValue = element.getAttribute("20");
+
+
+	};
+	
+	return {
+		init: _init
+	};
+})();
+
+window.onload = function() {
+	stars && starsModule.init();
+	progressModule.init();
+};
