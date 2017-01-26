@@ -11,28 +11,38 @@ html, body {
   margin: 0 0 8px 0;
 }
 
-.star-rating {
-  display: inline-block;
-  margin: 0 0 10px 0;
+.rating {
+  display: flex;
+  justify-content: flex-end;
+  direction: rtl;
+  unicode-bidi: bidi-override;
 }
 
-.star-rating__ico {
+.rating__input {
+  display: none;
+}
+
+.rating__label::before {
+  content: "";
   display: inline-block;
-  cursor: pointer;
   width: 22px;
   height: 22px;
-  background: url("../assets/icons/star/inactive.svg") center/22px 22px no-repeat;
+  background: url("../assets/icons/inactive.svg") center/22px 22px no-repeat;
 }
 
-.star-rating__ico._active,
-.star-rating__ico:hover,
-.star-rating__ico:hover ~ .star-rating__ico,
-.star-rating__input:checked ~ .star-rating__ico {
-  background: url("../assets/icons/star/active.svg") center/22px 22px no-repeat;
+.rating__label:hover::before,
+.rating__label:hover ~ .rating__label::before,
+.rating__input:checked ~ .rating__label::before {
+  background: url("../assets/icons/active.svg") center/22px 22px no-repeat;
 }
 
-.star-rating__input {
-  display: none;
+.rating__label._active::before {
+  animation: animationStar 1s linear;
+}
+
+@keyframes animationStar {
+  0% {transform: scale(2,2);}
+  100% {transform: scale(1,1);}
 }
 
 .progress {
@@ -48,7 +58,8 @@ html, body {
 
 .progress::before {
   position: absolute;
-  left: 160px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 2px;
   content: attr(value) "%";
 }
@@ -66,7 +77,7 @@ html, body {
 }
 
 .progress::-webkit-progress-value {
-  background: #00ed3c;
+  background: linear-gradient(to right, #00f53e, #66ff8d);
   border-radius: 10px;
 }
 
