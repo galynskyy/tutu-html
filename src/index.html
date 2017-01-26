@@ -81,114 +81,110 @@
 				</div>
 
 				<form class="user-form">
-					<div class="user-form__block1">
-						<label class="user-form__label" for="user-surname">Фамилия</label>
-						<input class="user-form__input" type="text" id="user-surname" />
+					<fieldset class="user-form__section">
+						<label class="user-form__label">
+							Фамилия
+							<input class="user-form__input" type="text" />
+						</label>
+						<label class="user-form__label">
+							Имя
+							<input class="user-form__input" type="text" />
+						</label>
+						<label class="user-form__label">
+							Отчество
+							<input class="user-form__input" type="text" />
+						</label>
+					</fieldset>
+					<fieldset class="user-form__section">
+						<label class="user-form__label">
+							Меняли фамилию?
+							
+							<ul class="change-name">
+								<li class="change-name__item">
+									<input type="checkbox" class="change-name__checkbox" id="checkbox2" checked="checked" />
+									<label for="checkbox2" class="change-name__label">Да</label>
+								</li>
+								<li class="change-name__item _active">
+									<input type="checkbox" class="change-name__checkbox" id="checkbox1" checked="checked" />
+									<label for="checkbox1" class="change-name__label">Нет</label>
+								</li>
+							</ul>
+						</label>
+						<label class="user-form__label">
+							Пол
+							
+							<ul class="change-gender">
+								<li class="change-gender__item _active">
+									<input type="checkbox" class="change-gender__checkbox" id="checkbox3" checked="checked" />
+									<label for="checkbox3" class="change-gender__label">Муж</label>
+								</li>
+								<li class="change-gender__item">
+									<input type="checkbox" class="change-gender__checkbox" id="checkbox4" checked="checked" />
+									<label for="checkbox4" class="change-gender__label">Жен</label>
+								</li>
+							</ul>
+						</label>
+						<label class="user-form__label">
+							Семейное положение
+							<select class="user-form__select">
+        						<option value="1">Женат / Замужем</option>
+      						</select>
+						</label>
+					</fieldset>
+					<fieldset class="user-form__section">
+						<label class="user-form__label">
+							Гражданство
+							<select class="user-form__select">
+        						<option value="1">Российская федерация</option>
+      						</select>
+						</label>
+						<label class="user-form__label">
+							Дата рождения
 
-						<label class="user-form__label" for="user-name">Имя</label>
-						<input class="user-form__input" type="text" id="user-name" />
-
-						<label class="user-form__label" for="user-otchestvo">Отчество</label>
-						<input class="user-form__input" type="text" id="user-otchestvo" />
-					</div>
-					<div class="user-form__block2">
-						<label>Меняли фамилию?</label>
-						<ul class="change-name">
-							<li class="change-name__item">
-								<input type="checkbox" class="change-name__checkbox" id="checkbox2" checked="checked" />
-								<label for="checkbox2" class="change-name__label">Да</label>
-							</li>
-							<li class="change-name__item _active">
-								<input type="checkbox" class="change-name__checkbox" id="checkbox1" checked="checked" />
-								<label for="checkbox1" class="change-name__label">Нет</label>
-							</li>
-						</ul>
-						<label>Пол</label>
-						<ul class="change-gender">
-							<li class="change-gender__item _active">
-								<input type="checkbox" class="change-gender__checkbox" id="checkbox3" checked="checked" />
-								<label for="checkbox3" class="change-gender__label">Муж</label>
-							</li>
-							<li class="change-gender__item">
-								<input type="checkbox" class="change-gender__checkbox" id="checkbox4" checked="checked" />
-								<label for="checkbox4" class="change-gender__label">Жен</label>
-							</li>
-						</ul>
-						<label>Семейное положение</label>
-						<select>
-							<option>Женат/Замужем</option>
-						</select>
-						<label>Гражданство</label>
-						<select>
-							<option>Российская федерация</option>
-						</select>
-						<label>Дата рождения</label>
-						<select>
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-							<option>6</option>
-							<option>7</option>
-							<option>8</option>
-							<option>9</option>
-							<option>10</option>
-							<option>11</option>
-							<option>12</option>
-							<option>13</option>
-							<option>14</option>
-							<option>15</option>
-							<option>16</option>
-							<option>17</option>
-							<option>18</option>
-							<option>19</option>
-							<option>20</option>
-							<option>21</option>
-							<option>22</option>
-							<option>23</option>
-							<option>24</option>
-							<option>25</option>
-							<option>26</option>
-							<option>27</option>
-							<option>28</option>
-							<option>29</option>
-							<option>30</option>
-							<option>31</option>
-						</select>
-						<select>
-							<option>Январь</option>
-							<option>Февраль</option>
-							<option>Март</option>
-							<option>4</option>
-							<option>Апрель</option>
-							<option>Май</option>
-							<option>7</option>
-							<option>8</option>
-							<option>9</option>
-							<option>10</option>
-							<option>11</option>
-							<option>12</option>
-						</select>
-						<select>
-							<option>Российская федерация</option>
-						</select>
-					</div>
-
-					<div class="user-form__block3">
-
-					</div>
+							<div class="user-form__selects">
+								<select class="user-form__select _date">
+	        						<option value="1">1</option>
+	        						<option value="2">2</option>
+	        						<option value="3">3</option>
+	        						<option value="4">4</option>
+	        						<option value="11" selected="">11</option>
+      							</select>
+	      						<select class="user-form__select _date">
+	        						<option value="1">Январь</option>
+	        						<option value="2">Февраль</option>
+	        						<option value="3">Март</option>
+	        						<option value="4">Апрель</option>
+	        						<option value="4">Май</option>
+	        						<option value="11" selected="">Июнь</option>
+	      						</select>
+	      						<select class="user-form__select _date">
+	        						<option value="1">1965</option>
+	        						<option value="2">1966</option>
+	        						<option value="3">1967</option>
+	        						<option value="4">1968</option>
+	        						<option value="4">1969</option>
+	        						<option value="11" selected="">1970</option>
+	      						</select>
+							</div>
+						</label>
+					</fieldset>
+					<fieldset class="user-form__section">
+						<label class="user-form__label _location">
+							Место рождения
+							<input class="user-form__input _location" type="text" />
+							<span class="user-form__span">Например, Россия, Комсомольск на Амуре</span>
+						</label>
+					</fieldset>
+					<fieldset class="user-form__section _buttons">
+						<button type="submit" class="user-form__button _inactive">
+							<span class="user-form__icon _inactive"></span> Назад
+						</button>
+						<button type="submit" class="user-form__button _active">
+							Вперед <span class="user-form__icon _active"></span>
+						</button>
+					</fieldset>
 				</form>
 			</div>
 		</div>
-		<script>
-			var checkboxes = document.querySelectorAll(".change-name__checkbox");
-
-			for (var checkbox of checkboxes) {
-            	checkbox.addEventListener("click", test);
-        	};
-
-        	var 
-		</script>
 	</body>
 </html>

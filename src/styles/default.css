@@ -5,32 +5,36 @@ html, body {
 
 .wrapper {
   width: 1024px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 .about {
   display: inline-block;
   width: 200px;
-  margin: 0 40px 0 0;
+  margin: 120px 40px 0 0;
+}
+
+.about__company,
+.about__goal {
+  font: 14px "OpenSans-Regular", sans-serif;
 }
 
 .content {
-  
   display: inline-block;
   vertical-align: top;
 }
 
 .navigation {
-  width: 100%;
-  border: 1px solid #dedede;
   border-radius: 8px;
-  box-shadow: 0px 1px 0px 0px rgba(222,222,222,1);
+  box-shadow: 0px 1px 1px 1px rgba(168,168,168,.6);
   padding: 25px;
+  margin: 0 0 60px 0;
   text-align: center;
 }
 
 .navigation__link {
   margin: 0 30px 0 0;
+  font: 14px "OpenSans-Regular", sans-serif;
 }
 
 .navigation__link:last-child {
@@ -82,6 +86,11 @@ html, body {
 .info-form__heading {
   display: inline-block;
   margin: 0 30px 0 0;
+  font: bold 22px "OpenSans-Regular", sans-serif;
+}
+
+.info-form {
+  margin: 0 0 40px 0;
 }
 
 .progress-indicators__item:first-child {
@@ -106,7 +115,8 @@ html, body {
 }
 
 .info-form__section {
-  font-size: 16px;
+  font: italic 14px "OpenSans-Light", sans-serif;
+  color: #7a7a7a;
   overflow: hidden;
 }
 
@@ -114,14 +124,16 @@ html, body {
   content: "";
   display: inline-block;
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid #7a7a7a;
   vertical-align: middle;
   width: 100%;
-  margin-right: -100%;
+  margin: 0 -100% 0 4px;
 }
 
 .change-name {
   list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
 }
 
 .change-name__item {
@@ -137,6 +149,7 @@ html, body {
 .change-name__label {
   border-bottom: 1px dashed #000;
   cursor: pointer;
+  font: 14px "OpenSans-Regular", sans-serif;
 }
 
 .change-name__item._active {
@@ -145,10 +158,13 @@ html, body {
 
 .change-name__item._active .change-name__label {
   border: 0;
+  color: #fff;
 }
 
 .change-gender {
   list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
 }
 
 .change-gender__item {
@@ -164,6 +180,7 @@ html, body {
 .change-gender__label {
   border-bottom: 1px dashed #000;
   cursor: pointer;
+  font: 14px "OpenSans-Regular", sans-serif;
 }
 
 .change-gender__item._active {
@@ -172,4 +189,90 @@ html, body {
 
 .change-gender__item._active .change-gender__label {
   border: 0;
+  color: #fff;
+}
+
+.user-form__section {
+  border: 0;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+
+.user-form__label {
+  display: inline-block;
+  margin: 0 40px 0 0;
+  font: bold 12px "OpenSans-Regular", sans-serif;
+}
+
+.user-form__label:last-child {
+  margin: 0;
+}
+
+.user-form__input {
+  display: block;
+  margin: 10px 0 0 0;
+}
+
+.user-form__select {
+  display: block;
+  margin: 10px 0 0 0;
+}
+
+.user-form__select._date {
+  display: inline-block;
+}
+
+.user-form__label._location,
+.user-form__input._location {
+  width: 100%;
+}
+
+.user-form__span {
+  display: block;
+  font: 12px "OpenSans-Light", sans-serif;
+  color: #7a7a7a;
+  margin: 10px 0 0 0;
+}
+
+.user-form__section._buttons {
+  background: #f2f2f2;
+  min-height: 65px;
+}
+
+.user-form__button {
+  min-height: 36px;
+  min-width: 120px;
+  color: #fff;
+  font: 14px "OpenSans-Regular", sans-serif;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 18px;
+}
+
+.user-form__button:hover {
+  opacity: .8;
+}
+
+.user-form__button._active {
+  background: linear-gradient(to bottom, #a2d605, #9cce05);
+}
+
+.user-form__button._inactive {
+  background: linear-gradient(to bottom, #bfbfbf, #a7a7a7);
+}
+
+.user-form__icon {
+  display: inline-block;
+  min-width: 22px;
+  min-height: 22px;
+  vertical-align: middle;
+}
+
+.user-form__icon._inactive {
+  background: url("../assets/icons/left-arrow.svg") center/22px 22px no-repeat;
+}
+
+.user-form__icon._active {
+  background: url("../assets/icons/right-arrow.svg") center/22px 22px no-repeat;
 }
