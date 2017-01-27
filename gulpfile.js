@@ -1,7 +1,6 @@
 var gulp = require("gulp");
 var concat = require("gulp-concat");
 var autoprefixer = require("autoprefixer");
-var cssnano = require("cssnano");
 var postcss = require("gulp-postcss");
 
 gulp.task("default", ["build"]);
@@ -10,7 +9,7 @@ gulp.task("build", ["styles", "html", "js", "assets", "fonts"]);
 gulp.task("styles", function() {
 	return gulp.src("./src/components/**/*.css")
 		.pipe(concat("build.min.css"))
-		.pipe(postcss([autoprefixer, cssnano]))
+		.pipe(postcss([autoprefixer]))
 		.pipe(gulp.dest("./public/styles/"));
 });
 
