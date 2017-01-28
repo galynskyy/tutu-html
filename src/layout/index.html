@@ -9,12 +9,12 @@
 	<body>
 		<div class="wrapper">
 			<div class="about">
-				<p class="about__company">
+				<p class="about__text">
 					*TutuRu - крупнейший сервис
 					поиска, бронирования и покупки авиабилетов и ж/д билетов.
 				</p>
 
-				<p class="about__goal">
+				<p class="about__text">
 					Наша цель проста - делать наших
 					клиентов счастливыми, а их
 					путешествия незабываемыми.
@@ -49,140 +49,123 @@
 					</a>
 				</nav>
 
-				<div class="info-form">
-					<h1 class="info-form__heading">
-						Заполните форму
-					</h1>
-
-					<ul class="progress-indicators">
-						<li class="progress-indicators__item _done">
-							1
-						</li>
-
-						<li class="progress-indicators__item _done">
-							2
-						</li>
-
-						<li class="progress-indicators__item _active">
-							3
-						</li>
-
-						<li class="progress-indicators__item _inactive">
-							4
-						</li>
-
-						<li class="progress-indicators__item _inactive">
-							5
-						</li>
+				<form class="form">
+					<div class="form-header">
+						<h1 class="form-header__title">Заполните форму</h1>
+					</div>
+					<ul class="form-progress">
+						<li class="form-progress__item _done">1</li>
+						<li class="form-progress__item _done">2</li>
+						<li class="form-progress__item _active">3</li>
+						<li class="form-progress__item _inactive">4</li>
+						<li class="form-progress__item _inactive">5</li>
 					</ul>
-					<h1 class="info-form__section">
-						Общая информация
-					</h1>
-				</div>
-
-				<form class="user-form">
-					<fieldset class="user-form__section">
-						<label class="user-form__label">
-							Фамилия
-							<input class="user-form__input" type="text" />
-						</label>
-						<label class="user-form__label">
-							Имя
-							<input class="user-form__input" type="text" />
-						</label>
-						<label class="user-form__label">
-							Отчество
-							<input class="user-form__input" type="text" />
-						</label>
-					</fieldset>
-					<fieldset class="user-form__section">
-						<label class="user-form__label">
-							Меняли фамилию?
-							
-							<ul class="change-name">
-								<li class="change-name__item">
-									<input type="checkbox" class="change-name__checkbox" id="checkbox2" checked="checked" />
-									<label for="checkbox2" class="change-name__label">Да</label>
-								</li>
-								<li class="change-name__item _active">
-									<input type="checkbox" class="change-name__checkbox" id="checkbox1" checked="checked" />
-									<label for="checkbox1" class="change-name__label">Нет</label>
-								</li>
-							</ul>
-						</label>
-						<label class="user-form__label">
-							Пол
-							
-							<ul class="change-gender">
-								<li class="change-gender__item _active">
-									<input type="checkbox" class="change-gender__checkbox" id="checkbox3" checked="checked" />
-									<label for="checkbox3" class="change-gender__label">Муж</label>
-								</li>
-								<li class="change-gender__item">
-									<input type="checkbox" class="change-gender__checkbox" id="checkbox4" checked="checked" />
-									<label for="checkbox4" class="change-gender__label">Жен</label>
-								</li>
-							</ul>
-						</label>
-						<label class="user-form__label">
-							Семейное положение
-							<select class="user-form__select">
-        						<option value="1">Женат / Замужем</option>
-      						</select>
-						</label>
-					</fieldset>
-					<fieldset class="user-form__section">
-						<label class="user-form__label">
-							Гражданство
-							<select class="user-form__select">
-        						<option value="1">Российская федерация</option>
-      						</select>
-						</label>
-						<label class="user-form__label">
-							Дата рождения
-
-							<div class="user-form__selects">
-								<select class="user-form__select _date">
-	        						<option value="1">1</option>
-	        						<option value="2">2</option>
-	        						<option value="3">3</option>
-	        						<option value="4">4</option>
-	        						<option value="11" selected="">11</option>
-      							</select>
-	      						<select class="user-form__select _date">
-	        						<option value="1">Январь</option>
-	        						<option value="2">Февраль</option>
-	        						<option value="3">Март</option>
-	        						<option value="4">Апрель</option>
-	        						<option value="4">Май</option>
-	        						<option value="11" selected="">Июнь</option>
-	      						</select>
-	      						<select class="user-form__select _date">
-	        						<option value="1">1965</option>
-	        						<option value="2">1966</option>
-	        						<option value="3">1967</option>
-	        						<option value="4">1968</option>
-	        						<option value="4">1969</option>
-	        						<option value="11" selected="">1970</option>
-	      						</select>
+					<div class="form-desc">
+						<h1 class="form-desc__title">Общая информация</h1>
+					</div>
+					<div class="form-group">
+						<div class="form-group__item">
+							<div class="form-group__header">
+								<p class="form-group__title">Фамилия</p>
 							</div>
-						</label>
-					</fieldset>
-					<fieldset class="user-form__section">
-						<label class="user-form__label _location">
-							Место рождения
-							<input class="user-form__input _location" type="text" />
-							<span class="user-form__span">Например, Россия, Комсомольск на Амуре</span>
-						</label>
-					</fieldset>
-					<fieldset class="user-form__section _buttons">
-						<button type="submit" class="user-form__button _inactive">
-							<span class="user-form__icon _inactive"></span> Назад
-						</button>
-						<button type="submit" class="user-form__button _active">
-							Вперед <span class="user-form__icon _active"></span>
-						</button>
-					</fieldset>
+							<div class="form-group__control">
+								<input class="form-group__input" type="text" />
+							</div>
+						</div>
+						<div class="form-group__item">
+							<div class="form-group__header">
+								<p class="form-group__title">Имя</p>
+							</div>
+							<div class="form-group__control">
+								<input class="form-group__input" type="text" />
+							</div>
+						</div>
+						<div class="form-group__item">
+							<div class="form-group__header">
+								<p class="form-group__title">Отчество</p>
+							</div>
+							<div class="form-group__control">
+								<input class="form-group__input" type="text" />
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-group__item">
+							<div class="form-group__header">
+								<p class="form-group__title">Меняли фамилию?</p>
+							</div>
+							<div class="form-group__control">
+								<input class="form-group__radio" type="radio" name="surname-changed" id="radio-surname-1" />
+								<label class="form-group__label" for="radio-surname-1">Да</label>
+								<input class="form-group__radio" type="radio" name="surname-changed" id="radio-surname-2" checked="checked" />
+								<label class="form-group__label" for="radio-surname-2">Нет</label>
+							</div>
+						</div>
+						<div class="form-group__item">
+							<div class="form-group__header">
+								<p class="form-group__title">Пол</p>
+							</div>
+							<div class="form-group__control">
+								<input class="form-group__radio" type="radio" name="gender" id="radio-gender-1" checked="checked" />
+								<label class="form-group__label" for="radio-gender-1">Муж</label>
+								<input class="form-group__radio" type="radio" name="gender" id="radio-gender-2" />
+								<label class="form-group__label" for="radio-gender-2">Жен</label>
+							</div>
+						</div>
+						<div class="form-group__item">
+							<div class="form-group__header">
+								<p class="form-group__title">Семейное положение</p>
+							</div>
+							<div class="form-group__control">
+								<select class="form-group__select">
+									<option>Женат / Замужем</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-group__item">
+							<div class="form-group__header">
+								<p class="form-group__title">Гражданство</p>
+							</div>
+							<div class="form-group__control">
+								<select class="form-group__select">
+									<option>Российская Федерация</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group__item">
+							<div class="form-group__header">
+								<p class="form-group__title">Дата рождения</p>
+							</div>
+							<div class="form-group__control">
+								<select class="form-group__select">
+									<option>11</option>
+								</select>
+								<select class="form-group__select">
+									<option>июня</option>
+								</select>
+								<select class="form-group__select">
+									<option>1970</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-group__header">
+							<p class="form-group__title">Место рождения</p>
+						</div>
+						<div class="form-group__control">
+							<input class="form-group__input" type="text" />
+						</div>
+						<div class="form-group__desc">
+							<p class="form-group__legend">Например, Россия, Комсомольск на Амуре</p>
+						</div>
+					</div>
+					<div class="form-footer">
+						<button class="form-footer__btn _inactive" type="submit">&larr; Назад</button>
+						<button class="form-footer__btn _active" type="submit">Далее &rarr;</button>
+					</div>
 				</form>
 			</div>
 		</div>
