@@ -8,6 +8,7 @@ html, body {
 }
 
 .name__section {
+  font: 16px "Roboto-Regular", sans-serif;
   margin: 0 0 8px 0;
 }
 
