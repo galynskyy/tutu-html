@@ -1,6 +1,7 @@
 @font-face {
-	font-family: "Roboto-Regular";
-	src: url("../fonts/Roboto-Regular.ttf");
+	font-family: "OpenSans-Regular";
+	src: url("../fonts/Open-Sans-regular.woff2") format("woff2"),
+		 url("../fonts/Open-Sans-regular.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
