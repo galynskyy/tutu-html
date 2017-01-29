@@ -161,7 +161,7 @@ html, body {
   top: 50%;
   transform: translate(-50%, -50%);
   font: 14px "OpenSans-Light", sans-serif;
-  border-bottom: 1px dashed black;
+  border-bottom: 1px dashed #000;
   color: #000;
 }
 
