@@ -19,7 +19,7 @@ gulp.task("html", function() {
 });
 
 gulp.task("assets", function() {
-    gulp.src("./src/components/**/*.{svg,jpg,png}")
+    gulp.src("./src/layout/**/*.{svg,jpg,png}")
         .pipe(gulp.dest("./public/assets/"));
 });
 
