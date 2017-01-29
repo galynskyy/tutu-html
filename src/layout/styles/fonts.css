@@ -1,12 +1,15 @@
 @font-face {
-	font-family: "OpenSans-Light";
-	src: url("../fonts/OpenSans-Light.ttf");
+	font-family: "OpenSans-Regular";
+	src: url("../fonts/Open-Sans-regular.woff2") format("woff2"),
+		 url("../fonts/Open-Sans-regular.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
+
 @font-face {
-	font-family: "OpenSans-Regular";
-	src: url("../fonts/OpenSans-Regular.ttf");
+	font-family: "OpenSans-Light";
+	src: url("../fonts/Open-Sans-300.woff2") format("woff2"),
+		 url("../fonts/Open-Sans-300.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
