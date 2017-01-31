@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="styles/build.css" rel="stylesheet">
+		<title>Components Page</title>
+	</head>
+	<body>
+		<div class="components">
+			<div class="rating-section">
+				<h3 class="name__section">Рейтинг: </h3>
+				<div class="rating">
+					<input type="radio" name="example" class="rating__input" value="5" id="5" />
+					<label class="rating__label" for="5" title="5 stars"></label>
+					<input type="radio" name="example" class="rating__input" value="4" id="4" />
+					<label class="rating__label" for="4" title="4 stars"></label>
+					<input type="radio" name="example" class="rating__input" value="3" id="3" />
+					<label class="rating__label" for="3" title="3 stars"></label>
+					<input type="radio" name="example" class="rating__input" value="2" id="2" />
+					<label class="rating__label" for="2" title="2 stars"></label>
+					<input type="radio" name="example" class="rating__input" value="1" id="1" />
+					<label class="rating__label" for="1" title="1 stars"></label>
+				</div>
+			</div>
+
+			<div class="progress-section">
+				<h3 class="name__section">Прогресс-бар: </h3>
+				<progress class="progress" value="0" max="100"></progress>
+			</div>
+
+			<div class="buttons-section">
+				<h3 class="name__section">Кнопки: </h3>
+				<input class="btn _small" type="button" value="Кнопка">
+				<a class="btn _normal" href="#">Кнопка</a>
+				<div class="btn _big">Кнопка</div>
+				<button class="btn _small" type="button">Кнопка</button>
+			</div>
+		</div>
+
+		<script src="scripts/build.js"></script>
+	</body>
+</html>

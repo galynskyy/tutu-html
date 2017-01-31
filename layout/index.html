@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="styles/build.css" rel="stylesheet">
+		<title>Index Page</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="about">
+				<p class="about__text">
+					*TutuRu - крупнейший сервис
+					поиска, бронирования и покупки авиабилетов и ж/д билетов.
+				</p>
+
+				<p class="about__text">
+					Наша цель проста - делать наших
+					клиентов счастливыми, а их
+					путешествия незабываемыми.
+					Любое путешествие начинается с поиска билетов и
+					бронирования гостиниц.
+					А мы делаем это качественно,
+					обеспечивая самую лучшую
+					поддержку благодаря
+					собственному контакт-центру.
+				</p>
+			</div>
+
+			<div class="content">
+				<nav class="navigation">
+					<a class="navigation__link _personal" href="#">
+						Личный кабинет
+					</a>
+					<a class="navigation__link _section1" href="#">
+						Раздел 1
+					</a>
+					<a class="navigation__link _section2" href="#">
+						Раздел 2
+					</a>
+					<a class="navigation__link _section3" href="#">
+						Раздел 3
+					</a>
+					<a class="navigation__link _section4" href="#">
+						Раздел 4
+					</a>
+					<a class="navigation__link _section5" href="#">
+						Раздел 5
+					</a>
+				</nav>
+
+				<form class="form">
+					<div class="form-header">
+						<h1 class="form-header__title">Заполните форму</h1>
+					</div>
+					<ul class="form-progress">
+						<li class="form-progress__item _done">1</li>
+						<li class="form-progress__item _done">2</li>
+						<li class="form-progress__item _active">3</li>
+						<li class="form-progress__item _inactive">4</li>
+						<li class="form-progress__item _inactive">5</li>
+					</ul>
+					<div class="form-desc">
+						<h1 class="form-desc__title">Общая информация</h1>
+					</div>
+					<div class="form-group">
+						<div class="form-group__item">
+							<div class="form-group__header">
+								<p class="form-group__title">Фамилия</p>
+							</div>
+							<div class="form-group__control">
+								<input class="form-group__input" type="text" name="surname" />
+							</div>
+						</div>
+						<div class="form-group__item">
+							<div class="form-group__header">
+								<p class="form-group__title">Имя</p>
+							</div>
+							<div class="form-group__control">
+								<input class="form-group__input" type="text" name="name" />
+							</div>
+						</div>
+						<div class="form-group__item">
+							<div class="form-group__header">
+								<p class="form-group__title">Отчество</p>
+							</div>
+							<div class="form-group__control">
+								<input class="form-group__input" type="text" name="lastname" />
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-group__item">
+							<div class="form-group__header">
+								<p class="form-group__title">Меняли фамилию?</p>
+							</div>
+							<div class="form-group__control">
+								<input class="form-group__radio" type="radio" name="surname-select" id="radio-surname-1" value="1" />
+								<label class="form-group__label" for="radio-surname-1">
+									<span class="form-group__span">Да</span>
+								</label>
+								<input class="form-group__radio" type="radio" name="surname-select" id="radio-surname-2" checked="checked" value="0" />
+								<label class="form-group__label" for="radio-surname-2">
+									<span class="form-group__span">Нет</span>
+								</label>
+							</div>
+						</div>
+						<div class="form-group__item">
+							<div class="form-group__header">
+								<p class="form-group__title">Пол</p>
+							</div>
+							<div class="form-group__control">
+								<input class="form-group__radio" type="radio" name="gender-select" id="radio-gender-1" checked="checked" value="man" />
+								<label class="form-group__label" for="radio-gender-1">
+									<span class="form-group__span">Муж</span>
+								</label>
+								<input class="form-group__radio" type="radio" name="gender-select" id="radio-gender-2" value="woman" />
+								<label class="form-group__label" for="radio-gender-2">
+									<span class="form-group__span">Жен</span>
+								</label>
+							</div>
+						</div>
+						<div class="form-group__item">
+							<div class="form-group__header">
+								<p class="form-group__title">Семейное положение</p>
+							</div>
+							<div class="form-group__control">
+								<select class="form-group__select" name="mary-state">
+									<option value="1">Женат / Замужем</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-group__item">
+							<div class="form-group__header">
+								<p class="form-group__title">Гражданство</p>
+							</div>
+							<div class="form-group__control">
+								<select class="form-group__select" name="nationality">
+									<option value="russia">Российская Федерация</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group__item">
+							<div class="form-group__header">
+								<p class="form-group__title">Дата рождения</p>
+							</div>
+							<div class="form-group__control">
+								<input class="form-group__input" type="date" name="birthday" />
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-group__header">
+							<p class="form-group__title">Место рождения</p>
+						</div>
+						<div class="form-group__control">
+							<input class="form-group__input" type="text" name="location" />
+						</div>
+						<div class="form-group__desc">
+							<p class="form-group__legend">Например, Россия, Комсомольск на Амуре</p>
+						</div>
+					</div>
+					<div class="form-footer">
+						<button class="form-footer__btn _inactive" type="submit">&larr; Назад</button>
+						<button class="form-footer__btn _active" type="submit">Далее &rarr;</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="scripts/default.js"></script>
+	</body>
+</html>
