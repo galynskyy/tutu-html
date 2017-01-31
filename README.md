@@ -1,5 +1,9 @@
 # tutu-html
 
+## Используемые технологии
+- Gulp с плагинами (concat, autoprefixer, postcss)
+- Linux (Ubuntu)
+
 ## Адаптивный дизайн
 - Есть
 
